@@ -70,3 +70,5 @@ this may speak to adding MySQL into the mix.
 
 Remapped the flask port such that the compose environment serves from :8000,
 and verified that a local run (on :5000) can co-exist, at least for the moment.
+
+Flake8, because of course.

@@ -6,7 +6,7 @@ a simulated live environment.
 ## Local development
 
     python -m venv venv
-    pip install -r requirements.txt
+    pip install -r requirements.txt -r requirements-dev.txt
     FLASK_APP=server venv/bin/flask run
 
 Brings up the web server on `http://localhost:5000/`
