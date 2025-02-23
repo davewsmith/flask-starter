@@ -56,3 +56,13 @@ Then visit `http://localhost:5000`
 
 Things are set up to use a virtual environment inside the Dockerfile. Overkill?
 
+## Round 2
+
+Thinking about out how to make migrations. If made inside a container,
+they need to be exfiltrated, which adds the complication of either mounting
+source, or clumsiness in the form of a special exfil directory mounted as a
+way to copy code back out. Thinking that doing migration development
+outside of the container (i.e., using an activated virtual environment)
+will be fine, so let's explore that.
+
+
