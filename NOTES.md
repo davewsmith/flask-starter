@@ -18,6 +18,7 @@ environment to a `docker compose` one.
 In roughly this order:
 
   * [done] Set up a basic flask application
+  * Sort out mounting . inside the container
   * Set up tests and run them from a github action
   * Add database parts (with migrations) using SQLite3
   * Add celery, using redis
@@ -52,3 +53,6 @@ docker compose up
 ```
 
 Then visit `http://localhost:5000`
+
+Things are set up to use a virtual environment inside the Dockerfile. Overkill?
+
