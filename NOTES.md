@@ -17,7 +17,7 @@ environment to a `docker compose` one.
 
 In roughly this order:
 
-  * Set up a basic flask application
+  * [done] Set up a basic flask application
   * Set up tests and run them from a github action
   * Add database parts (with migrations) using SQLite3
   * Add celery, using redis
