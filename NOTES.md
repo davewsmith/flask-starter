@@ -18,7 +18,7 @@ environment to a `docker compose` one.
 In roughly this order:
 
   * [done] Set up a basic flask application
-  * Sort out mounting . inside the container
+  * [nope] Sort out mounting . inside the container
   * Set up tests and run them from a github action
   * Add database parts (with migrations) using SQLite3
   * Add celery, using redis
@@ -65,4 +65,8 @@ way to copy code back out. Thinking that doing migration development
 outside of the container (i.e., using an activated virtual environment)
 will be fine, so let's explore that.
 
+Since MySQL supports a wider ranges of schema changes than SQLite3,
+this may speak to adding MySQL into the mix.
 
+Remapped the flask port such that the compose environment serves from :8000,
+and verified that a local run (on :5000) can co-exist, at least for the moment.
