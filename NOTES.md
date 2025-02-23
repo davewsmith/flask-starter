@@ -43,3 +43,12 @@ FLASK_APP=server.py flask run
 ```
 
 Then visit `http://localhost:5000`
+
+or
+
+```
+docker compose build
+docker compose up
+```
+
+Then visit `http://localhost:5000`
