@@ -77,3 +77,6 @@ Flake8, because of course. And oh, right. `conftest.py` is where the fixtures
 go.
 
 On to (simple) database and migrations.
+
+Thinking also that it might be time to drive this from github issues,
+but on the other hand, that feels like Jira, and f*ck that.
