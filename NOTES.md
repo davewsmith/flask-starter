@@ -79,4 +79,14 @@ go.
 On to (simple) database and migrations.
 
 Thinking also that it might be time to drive this from github issues,
-but on the other hand, that feels like Jira, and f*ck that.
+but on the other hand, that feels like Jira, and f\*ck that.
+
+## Round 2.1
+
+Made a simple starting point on layout and styles.
+The base app defines `app/templates/base.html`, which uses a starter
+stylesheet owned in `app/static/`. The `main` blueprint extends that.
+
+A thought: Maybe a `layouts` blueprint, with a set of ~base starting points
+for different UIs.
+
