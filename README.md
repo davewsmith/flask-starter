@@ -9,7 +9,15 @@ a simulated live environment.
     pip install -r requirements.txt -r requirements-dev.txt
     FLASK_APP=server venv/bin/flask run
 
-Brings up the web server on `http://localhost:5000/`
+brings up the web server on `http://localhost:5000/`
+
+    pytest
+
+runs tests.
+
+    flake8
+
+points out lint.
 
 ## Simulated deployment
 
