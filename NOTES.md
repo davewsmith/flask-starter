@@ -90,3 +90,6 @@ stylesheet owned in `app/static/`. The `main` blueprint extends that.
 A thought: Maybe a `layouts` blueprint, with a set of ~base starting points
 for different UIs.
 
+... or, maybe, the layout options live in `app/templates/`, since
+they'll be matched with CSS in `app/static/`
+
