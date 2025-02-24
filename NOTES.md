@@ -19,16 +19,18 @@ In roughly this order:
 
   * [done] Set up a basic flask application
   * [nope] Sort out mounting . inside the container
-  * Set up tests and run them from a github action
+  * [done] Set up tests and flake8
+  * Run tests and flake8 from a github action
   * Add database parts (with migrations) using SQLite3
-  * Add celery, using redis
   * Add auth, using a development OIDC server
   * Put the app behind gunicorn
+  * Asynchronous task support (celery, redis)
 
 Optional:
 
-  * Pick a CSS framework
+  * coverage
   * Add MySQL or PostgreSQL support
+  * Pick a CSS framework
   * HTMX
   * Sort out how to deploy internally behind tailscale
 
@@ -73,3 +75,5 @@ and verified that a local run (on :5000) can co-exist, at least for the moment.
 
 Flake8, because of course. And oh, right. `conftest.py` is where the fixtures
 go.
+
+On to (simple) database and migrations.
