@@ -24,7 +24,8 @@ In roughly this order:
   * [done] Set up tests and flake8
   * Run tests and flake8 from a github action
   * [done] Add database parts (with migrations) using SQLite3
-  * Add auth, using a development OIDC server
+  * Add local auth
+  * Add federated auth, using a development OIDC server
   * Put the app behind gunicorn
   * Asynchronous task support (celery, redis)
 
