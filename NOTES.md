@@ -5,8 +5,10 @@ environment to a `docker compose` one.
 
 ## GOALS
 
- * Gather up a starting point for a production-ready, containerized
-   Flask application that supports federated authentication
+  * Gather up a starting point for a production-ready, containerized
+    Flask application that supports federated authentication and
+    asyncronous tasks
+  * Sort out how to do zero-downtime migrations
 
 ## NON-GOALS
 
