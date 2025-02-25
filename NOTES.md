@@ -110,3 +110,10 @@ the .db file from the local filesystem, since having it in a Docker-managed
 volume seems less than ideal.
 
 Side quest: If SQLite3, when/were to enable WAL?
+
+    pragma journal_mode=wal;
+
+will return `wal` if enabled. For memory files (e.g., for testing), it will
+return `memory`.
+
+Next up, wire up auth with login/logout, and add a default user.
