@@ -21,7 +21,7 @@ def create_app(config_class=Config):
         @event.listens_for(Engine, 'connect')
         def _sqlite_pragma(dbapi_connection, connection_record):
             cursor = dbapi_connection.cursor()
-            cursor.execute("PRAGME foreign_keys=ON;")
+            cursor.execute("PRAGMA foreign_keys=ON;")
             cursor.close()
 
     migrate.init_app(app, db, render_as_batch=True)
