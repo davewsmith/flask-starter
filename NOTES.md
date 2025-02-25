@@ -23,7 +23,7 @@ In roughly this order:
   * [nope] Sort out mounting . inside the container
   * [done] Set up tests and flake8
   * Run tests and flake8 from a github action
-  * Add database parts (with migrations) using SQLite3
+  * [done] Add database parts (with migrations) using SQLite3
   * Add auth, using a development OIDC server
   * Put the app behind gunicorn
   * Asynchronous task support (celery, redis)
@@ -95,3 +95,18 @@ for different UIs.
 ... or, maybe, the layout options live in `app/templates/`, since
 they'll be matched with CSS in `app/static/`
 
+
+## Round 3
+
+Add database and migration support, defaulting to sqlite3.
+
+Added a User model. Made and applied the migration.
+
+And, a complication. The migration looks to be database type specific.
+This looks to complicate a scheme whereby local development uses SQLite3 and a
+production deploy uses MySQL/PostgreSQL. This may mean commiting to a
+database from the outset. If SQLite3, I'll need to look at how to mount
+the .db file from the local filesystem, since having it in a Docker-managed
+volume seems less than ideal.
+
+Side quest: If SQLite3, when/were to enable WAL?
