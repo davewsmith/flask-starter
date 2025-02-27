@@ -9,7 +9,6 @@ services:
     volumes:
       - ./data:/data:rw
     environment:
-      FLASK_APP: server
       DATABASE_URL: sqlite:////data/app.db
     command:
       - bash
