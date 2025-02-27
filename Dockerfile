@@ -9,6 +9,14 @@ apt-get install --no-install-recommends -y \
 apt-get purge -y --auto-remove -o APT::AutoRemove:RecommendsImport=false && \
 rm -rf /var/lib/apt-lists
 
+RUN groupadd -g 1000 app && \
+useradd -m -d /app -s /bin/bash -u 1000 -g 1000 app && \
+chown app:app /app && \
+chmod 777 /opt
+
+USER app
+WORKDIR /app
+
 ENV VIRTUAL_ENV=/opt/venv
 RUN python3 -m venv $VIRTUAL_ENV
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"

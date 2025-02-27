@@ -118,3 +118,9 @@ will return `wal` if enabled. For memory files (e.g., for testing), it will
 return `memory`.
 
 Next up, wire up auth with login/logout, and add a default user.
+
+## Round 4
+
+Pre-factor to put the database in a mounted directory with host-compatible
+ownership (i.e., uid 1000, gid 1000).
+
