@@ -124,3 +124,26 @@ Next up, wire up auth with login/logout, and add a default user.
 Pre-factor to put the database in a mounted directory with host-compatible
 ownership (i.e., uid 1000, gid 1000).
 
+## Round 5
+
+Time for authentication, at least to the point of local login. Federated
+login can wait a bit.
+
+And, here comes the need to put up a skeleton UI, which pushes forward the
+need to make some UI decisions. I hesitate here because CSS is where
+I'm weakest. Choices here __feel, to me__ like they're hard to walk back.
+
+But are they? Is there a way to slide that decision closer to easily
+reversable (without becoming a lot better at CSS)? Backing up a step,
+part of the purpose of this project is to gather up a starting point
+for the next time an inspiration that calls for a webapp strikes.
+And it's usually been the case that most layout/style decisions are
+make in the primary (e.g, 'main') blueprint, and conformed to additional
+blueprints.
+
+So, why not provide a set of primary blueprints to choose from, where
+each provides its own static files (which avoid name collision)? One
+blueprint option would be traditional, another for HTMX, and so on.
+The set will likely be small. Worth a try!
+
+
