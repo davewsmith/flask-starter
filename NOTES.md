@@ -147,3 +147,19 @@ blueprint option would be traditional, another for HTMX, and so on.
 The set will likely be small. Worth a try!
 
 Added form support (`flask-wtf`) as an enabling step.
+
+Until there's a better way, this works to create a User
+
+```
+$ flask shell
+...
+>>> from app.main.models import User
+>>> from app import db
+>>> u = User(username='admin', email='admin@example.com')
+>>> u.set_password('admin')
+>>> u
+<User admin>
+>>> db.session.add(u)
+>>> db.session.commit()
+>>> .q
+```
