@@ -146,4 +146,4 @@ each provides its own static files (which avoid name collision)? One
 blueprint option would be traditional, another for HTMX, and so on.
 The set will likely be small. Worth a try!
 
-
+Added form support (`flask-wtf`) as an enabling step.

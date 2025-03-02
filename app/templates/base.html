@@ -3,13 +3,21 @@
 <html>
 <head>
 <title>{% block title %}Title here{% endblock %}</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v={{ style_css_mtime }}" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+{% block meta %}{% endblock %}
+{% block style -%}
+<style>
+body {
+    margin: 1em;
+    font-family: sans-serif;
+}
+</style>
+{%- endblock %}
+{% block head_js %}{% endblock %}
 </head>
 
 <body>
-<div class="wrapper">
-{% block content %}
-{% endblock %}
-</div>
+{% block content %}{% endblock %}
+{% block body_js %}{% endblock %}
 </body>
 </html>
