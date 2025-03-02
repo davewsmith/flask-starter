@@ -1,4 +1,5 @@
 Flask
-flask-sqlalchemy
-flask-migrate
-flask-wtf
+Flask-SQLalchemy
+Flask-Migrate
+Flask-WTF
+Flask-Login

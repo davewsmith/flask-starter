@@ -3,5 +3,5 @@
 {% block title %}starter{% endblock %}
 
 {% block content %}
-<h1>Hello, world!</h1>
+<h1>Hello, {% if current_user.is_anonymous %}Anonymous User{% else %}{{ current_user.username }}{% endif %}</h1>
 {% endblock %}
