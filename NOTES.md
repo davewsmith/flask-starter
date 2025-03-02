@@ -163,3 +163,10 @@ $ flask shell
 >>> db.session.commit()
 >>> .q
 ```
+
+## Round 5.1 a side trip into logging
+
+One of these days I'll sort out how to configure Flask logging the way I want
+it, but today isn't that day. https://flask.palletsprojects.com/en/stable/logging/
+is at best misleading about default behavior.
+
