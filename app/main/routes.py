@@ -21,7 +21,7 @@ def login():
     if form.validate_on_submit():
         # print(f"form.email.data = {form.email.data}")
         # print(f"form.password.data = {form.password.data}")
-        query = sa.select(User).where(User.email == form.email.data)
+        query = sa.select(User).where(User.username == form.username.data)
         user = db.session.scalar(query)
         if user is None or not user.check_password(form.password.data):
             # TODO provide feedback
