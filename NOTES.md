@@ -24,7 +24,8 @@ In roughly this order:
   * [done] Set up tests and flake8
   * Run tests and flake8 from a github action
   * [done] Add database parts (with migrations) using SQLite3
-  * Add local auth
+  * [done] Add local auth
+  * Add just enough styling
   * Add federated auth, using a development OIDC server
   * Put the app behind gunicorn
   * Asynchronous task support (celery, redis)
@@ -170,3 +171,9 @@ One of these days I'll sort out how to configure Flask logging the way I want
 it, but today isn't that day. https://flask.palletsprojects.com/en/stable/logging/
 is at best misleading about default behavior.
 
+## Round 6
+
+O.K., let's add just enough styling.
+
+Later, after slogging through PicoCSS and Tailwind tutorials and docs:
+O.K., maybe later.
