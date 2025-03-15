@@ -3,6 +3,8 @@
 A skeletal Flask application that uses `docker compose` to set up
 a simulated live environment.
 
+See [NOTES.md](NOTES.md) for status.
+
 ## Local development
 
     python -m venv venv
