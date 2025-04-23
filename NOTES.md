@@ -177,3 +177,20 @@ O.K., let's add just enough styling.
 
 Later, after slogging through PicoCSS and Tailwind tutorials and docs:
 O.K., maybe later.
+
+## Adding `flask shell` capability
+
+```
+$ docker exec -it flask-starter-web-1 /bin/sh
+ * Tip: There are .env files present. Install python-dotenv to use them.
+INFO made an app
+Python 3.10.12 (main, Feb  4 2025, 14:57:36) [GCC 11.4.0] on linux
+App: app
+Instance: /app/instance
+>>> for u in q:
+...     print(u.id, u.username, u.email)
+... 
+1 admin admin@example.com
+>>>
+```
+
