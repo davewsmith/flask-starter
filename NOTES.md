@@ -25,3 +25,7 @@ creating a new one under the old name. `docker compose build` appeared
 to work, but `docker compose up` brought up the old code. Deleting the
 old image (via `docker image rm`) fixed things.
 
+Haven't figured out how to get `gunicorn` to log requests. `--access-logfile`
+doesn't seem to work. Maybe I'm holding it wrong.
+
+

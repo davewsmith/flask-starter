@@ -1,0 +1,15 @@
+services:
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.app
+    ports:
+      - 5000:8000
+    environment:
+      PYTHONUNBUFFERED: 1
+    command:
+      - bash
+      - -c
+      - |
+        gunicorn --bind 0.0.0.0:8000 --access-logfile - --log-level info server:app
