@@ -4,7 +4,7 @@ Moving on from the prior, Vagrant-based starter, because progress!
 
 ## Goals/waypoints
 
-  * Basic trivial app, deployable and dev-mode.
+  * [done] Basic trivial app, deployable and dev-mode
   * pytest
   * Database, using current SQLAlchemy practices
   * Migrations
@@ -12,6 +12,10 @@ Moving on from the prior, Vagrant-based starter, because progress!
   * tailwindcss for dev-mode
   * Async jobs (probably celery)
     * With working logging
+
+Loose ends:
+
+  * 404, 400 handlers
 
 Options:
 
@@ -30,5 +34,3 @@ doesn't seem to work. Maybe I'm holding it wrong.
 
 The environments get rebuilt too often. There's probably a docker trick.
 (And indeed, there way.)
-
-404 and 500 handlers needed.
