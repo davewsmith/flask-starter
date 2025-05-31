@@ -28,4 +28,7 @@ old image (via `docker image rm`) fixed things.
 Haven't figured out how to get `gunicorn` to log requests. `--access-logfile`
 doesn't seem to work. Maybe I'm holding it wrong.
 
+The environments get rebuilt too often. There's probably a docker trick.
+(And indeed, there way.)
 
+404 and 500 handlers needed.

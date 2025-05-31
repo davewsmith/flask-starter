@@ -8,8 +8,10 @@ RUN groupadd -g 1000 app && \
   chown app:app /app
 
 WORKDIR /app
-COPY . .
 
+COPY requirements.txt requirements.txt
 RUN pip3 install --no-cache-dir -r requirements.txt
+
+COPY . .
 
 USER app
