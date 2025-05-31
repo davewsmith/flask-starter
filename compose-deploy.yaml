@@ -12,4 +12,4 @@ services:
       - bash
       - -c
       - |
-        gunicorn --bind 0.0.0.0:8000 --access-logfile - --log-level info server:app
+        gunicorn --bind 0.0.0.0:8000 --workers 3 --access-logfile - --log-level info server:app
