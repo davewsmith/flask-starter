@@ -4,6 +4,7 @@ from flask import Flask
 
 from config import Config
 
+
 def create_app(config_class=Config):
     dictConfig({
         'version': 1,
@@ -29,4 +30,3 @@ def create_app(config_class=Config):
     app.register_blueprint(main_bp)
 
     return app
-

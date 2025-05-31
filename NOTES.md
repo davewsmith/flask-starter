@@ -5,7 +5,7 @@ Moving on from the prior, Vagrant-based starter, because progress!
 ## Goals/waypoints
 
   * [done] Basic trivial app, deployable and dev-mode
-  * pytest
+  * pytest and flake8
   * Database, using current SQLAlchemy practices
   * Migrations
   * Local Auth
@@ -22,7 +22,7 @@ Options:
   * Federatated Auth
   * HTMX
 
-## Round 1
+## Round 1 - Simple App
 
 Fun docker edge case. Reused this repo name by renaming the old one and
 creating a new one under the old name. `docker compose build` appeared
@@ -34,3 +34,7 @@ doesn't seem to work. Maybe I'm holding it wrong.
 
 The environments get rebuilt too often. There's probably a docker trick.
 (And indeed, there way.)
+
+## Round 1 - pytest and flake8
+
+Reminded that flask8 doesn't speak pyproject.toml

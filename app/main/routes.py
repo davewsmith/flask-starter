@@ -7,7 +7,7 @@ from app.main import bp
 def home():
     return render_template('main/home.html')
 
+
 @bp.route('/fail')
 def fail():
     raise Exception('This is what a fail looks like')
-

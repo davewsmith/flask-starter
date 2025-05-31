@@ -1,0 +1,16 @@
+services:
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.app
+    volumes:
+      - .:/source
+    command:
+      - bash
+      - -c
+      - |
+        cd /source
+        echo pytest TBD
+        echo flake8 ...
+        flake8 --exclude=.git,venv,__pycache__
