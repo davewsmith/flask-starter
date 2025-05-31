@@ -1,0 +1,19 @@
+services:
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.app
+    volumes:
+      - .:/source
+    ports:
+      - 5000:5000
+    environment:
+      FLASK_APP: server:app
+    command:
+      - bash
+      - -c
+      - |
+        cd /source
+        flask run --host=0.0.0.0
+        # TODO gunicorn
