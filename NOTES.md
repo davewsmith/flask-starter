@@ -15,15 +15,17 @@ Moving on from the prior, Vagrant-based starter, because progress!
 
 Loose ends:
 
-  * 404, 400 handlers
+  * [done] 404, 400 handlers
 
 Options:
 
-  * Federatated Auth
+  * Federated Auth
   * HTMX
   * Maybe Tailwind CDN has an option, though that's entirely a
     template thing, and can co-existing with wasting memory and
-    cycles running the cli.
+    cycles running the cli
+  * A CRUD Blueprint, mostly to have a starting point for forms,
+    pagination, and such
 
 ## Round 1 - Simple App
 
@@ -51,3 +53,15 @@ After realizing that tailwindcss was (or could be) part of the dev environment
 as it currently is, let's do that next. Requires some theory of how to structure
 HTML, but that's easy enough to revisit later.
 
+## Round 3.1 - 404 and 500
+
+Adding handlers for these is forcing the issue of HTML structure.
+Thinking that I might have been overthinking this in the past.
+The idea of having a special 'layout' Blueprint sounded good
+in theory, but in practice all of the code-bearing Blueprints
+need their templates to conform to layout anyway, so it might
+as well go in a trimmed-down main Blueprint.
+
+Consulting https://flask.palletsprojects.com/en/stable/blueprints/#templates for clarity.
+
+Maybe I wasn't overthinking it. Good thing decisions here aren't final.

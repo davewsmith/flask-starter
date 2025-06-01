@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>{% block title %}Title{% endblock %}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+{% block meta %}{% endblock %}
+{% block style -%}
+<style>
+body {
+    margin: 1em;
+    font-family: sans-serif;
+}
+</style>
+{%- endblock %}
+{% block head_js %}{% endblock %}
+</head>
+
+<body>
+{% block content %}{% endblock %}
+{% block body_js %}{% endblock %}
+</body>
+</html>
