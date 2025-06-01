@@ -1,5 +1,19 @@
 services:
 
+  tailwindcss:
+    build:
+      context: .
+      dockerfile: Dockerfile.tailwindcss
+    volumes:
+      - .:/source
+    tty: true
+    command:
+      - bash
+      - -c
+      - |
+        tailwindcss -i app/static/tailwind.css -o app/static/style.css --watch
+
+
   web:
     build:
       context: .

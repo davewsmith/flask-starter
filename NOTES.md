@@ -6,10 +6,10 @@ Moving on from the prior, Vagrant-based starter, because progress!
 
   * [done] Basic trivial app, deployable and dev-mode
   * [done] pytest and flake8
+  * [done] tailwindcss for dev-mode
   * Database, using current SQLAlchemy practices
   * Migrations
   * Local Auth
-  * tailwindcss for dev-mode
   * Async jobs (probably celery)
     * With working logging
 
@@ -35,9 +35,16 @@ doesn't seem to work. Maybe I'm holding it wrong.
 The environments get rebuilt too often. There's probably a docker trick.
 (And indeed, there way.)
 
-## Round 1 - pytest and flake8
+## Round 2 - pytest and flake8
 
 Reminded that flask8 doesn't speak pyproject.toml
 
 Also, happy to finally shake off Flask-Testing, which hasn't been updated
 in years.
+
+## Round 3 - tailwindcss
+
+After realizing that tailwindcss was (or could be) part of the dev environment
+as it currently is, let's do that next. Requires some theory of how to structure
+HTML, but that's easy enough to revisit later.
+
