@@ -5,7 +5,8 @@ ENV PYTHONDONTWRITEBYTECODE=1
 
 RUN groupadd -g 1000 app && \
   useradd -m -d /app -s /bin/bash -u 1000 -g 1000 app && \
-  chown app:app /app
+  chown app:app /app && \
+  mkdir /data && chown 1000:1000 /data
 
 WORKDIR /app
 
