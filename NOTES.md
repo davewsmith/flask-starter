@@ -7,7 +7,7 @@ Moving on from the prior, Vagrant-based starter, because progress!
   * [done] Basic trivial app, deployable and dev-mode
   * [done] pytest and flake8
   * [done] tailwindcss for dev-mode
-  * Database, using current SQLAlchemy practices
+  * [in progress] Database, using current SQLAlchemy practices
   * Migrations
   * Local Auth
   * Async jobs (probably celery)
@@ -65,3 +65,12 @@ as well go in a trimmed-down main Blueprint.
 Consulting https://flask.palletsprojects.com/en/stable/blueprints/#templates for clarity.
 
 Maybe I wasn't overthinking it. Good thing decisions here aren't final.
+
+## Round 4 - Database
+
+Volume foibles. Create it in the Dockerfile first so that the mounted
+volume will have the right ownership. Brought to you by a cryptic
+SQLAlchemy failure when /data was owned by root:root
+
+Now the question: To demo db hookup, and actually, you know, add a
+table and do a query, add Auth next, or CRUD next?

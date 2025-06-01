@@ -8,6 +8,7 @@ from config import Config
 
 class TestConfig(Config):
     TESTING = 1
+    SQLALCHEMY_DATABASE_URI = "sqlite:///:memory:"
 
 
 @pytest.fixture()
