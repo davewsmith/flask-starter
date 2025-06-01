@@ -21,6 +21,9 @@ Options:
 
   * Federatated Auth
   * HTMX
+  * Maybe Tailwind CDN has an option, though that's entirely a
+    template thing, and can co-existing with wasting memory and
+    cycles running the cli.
 
 ## Round 1 - Simple App
 
@@ -33,7 +36,7 @@ Haven't figured out how to get `gunicorn` to log requests. `--access-logfile`
 doesn't seem to work. Maybe I'm holding it wrong.
 
 The environments get rebuilt too often. There's probably a docker trick.
-(And indeed, there way.)
+(And indeed, there was.)
 
 ## Round 2 - pytest and flake8
 
