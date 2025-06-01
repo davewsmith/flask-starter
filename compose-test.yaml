@@ -11,6 +11,7 @@ services:
       - -c
       - |
         cd /source
-        echo pytest TBD
+        echo pytest ...
+        pytest --verbose
         echo flake8 ...
         flake8 --exclude=.git,venv,__pycache__

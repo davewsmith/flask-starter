@@ -5,7 +5,7 @@ Moving on from the prior, Vagrant-based starter, because progress!
 ## Goals/waypoints
 
   * [done] Basic trivial app, deployable and dev-mode
-  * pytest and flake8
+  * [done] pytest and flake8
   * Database, using current SQLAlchemy practices
   * Migrations
   * Local Auth
@@ -38,3 +38,6 @@ The environments get rebuilt too often. There's probably a docker trick.
 ## Round 1 - pytest and flake8
 
 Reminded that flask8 doesn't speak pyproject.toml
+
+Also, happy to finally shake off Flask-Testing, which hasn't been updated
+in years.
