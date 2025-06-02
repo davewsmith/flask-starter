@@ -45,4 +45,7 @@ def create_app(config_class=Config):
     from app.main import bp as main_bp  # noqa
     app.register_blueprint(main_bp)
 
+    from app.crud import bp as crud_bp  # noqa
+    app.register_blueprint(crud_bp)
+
     return app

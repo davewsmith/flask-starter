@@ -16,6 +16,7 @@ Moving on from the prior, Vagrant-based starter, because progress!
 Loose ends:
 
   * [done] 404, 400 handlers
+  * Cache-bust CSS
 
 Options:
 
@@ -24,7 +25,7 @@ Options:
   * Maybe Tailwind CDN has an option, though that's entirely a
     template thing, and can co-existing with wasting memory and
     cycles running the cli
-  * A CRUD Blueprint, mostly to have a starting point for forms,
+  * [in progress] A CRUD Blueprint, mostly to have a starting point for forms,
     pagination, and such
 
 ## Round 1 - Simple App
@@ -74,3 +75,5 @@ SQLAlchemy failure when /data was owned by root:root
 
 Now the question: To demo db hookup, and actually, you know, add a
 table and do a query, add Auth next, or CRUD next?
+
+CRUD, since a few project I intend this for won't need Auth.

@@ -1,0 +1,31 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+<h1>CRUD</h1>
+
+<table>
+<thead>
+  <tr>
+    <th class="border border-gray-300">id</th>
+    <th class="border border-gray-300">name</th>
+    <th class="border border-gray-300">created</th>
+  </tr>
+</thead>
+<tbody>
+{% for crud in cruds %}
+  <tr>
+    <td class="border border-gray-300 px-2">{{ crud.id }}</td>
+    <td class="border border-gray-300 px-2">{{ crud.name }}</td>
+    <td class="border border-gray-300 px-2">{{ crud.created_at.strftime("%Y-%m-%d %H:%M") }}</td>
+  </tr>
+{% endfor %}
+</tbody>
+</table>
+
+<div class="mt-2">
+<form action="{{ url_for('crud.add') }}">
+<button type="submit" class="border rounded-sm border-gray px-2">Add Crud</button>
+</form>
+</div>
+
+{% endblock %}
