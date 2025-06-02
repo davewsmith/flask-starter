@@ -3,6 +3,17 @@
 {% block content %}
 <h1>CRUD</h1>
 
+<form action="" method="POST" novalidate>
+{{ form.hidden_tag() }}
+<p class="pb-2">
+{{ form.name.label }}:
+{{ form.name(size=32, class="border border-gray") }}
+</p>
+<p class="pb-2">
+<button type="submit" class="border rounded-sm border-gray px-2">{{ form.submit.label }}</button>
+</p>
+</form>
+
 <table>
 <thead>
   <tr>
@@ -21,11 +32,5 @@
 {% endfor %}
 </tbody>
 </table>
-
-<div class="mt-2">
-<form action="{{ url_for('crud.add') }}">
-<button type="submit" class="border rounded-sm border-gray px-2">Add Crud</button>
-</form>
-</div>
 
 {% endblock %}

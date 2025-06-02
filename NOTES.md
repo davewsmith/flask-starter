@@ -77,3 +77,8 @@ Now the question: To demo db hookup, and actually, you know, add a
 table and do a query, add Auth next, or CRUD next?
 
 CRUD, since a few project I intend this for won't need Auth.
+
+Getting wtforms and tailwindcss to play well together might require
+some arm-wrestling.
+
+Needs pagination and delete, but that's good for this round.
