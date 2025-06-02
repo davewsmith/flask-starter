@@ -12,7 +12,7 @@ from .models import Crud
 def home():
     form = CrudForm()
     if form.validate_on_submit():
-        new_crud=Crud(name=form.name.data)
+        new_crud = Crud(name=form.name.data)
         db.session.add(new_crud)
         db.session.commit()
         return redirect(url_for("crud.home"))
