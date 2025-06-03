@@ -7,7 +7,7 @@ Moving on from the prior, Vagrant-based starter, because progress!
   * [done] Basic trivial app, deployable and dev-mode
   * [done] pytest and flake8
   * [done] tailwindcss for dev-mode
-  * [in progress] Database, using current SQLAlchemy practices
+  * [done] Database, using current SQLAlchemy practices
   * Migrations
   * Local Auth
   * Async jobs (probably celery)
@@ -22,7 +22,7 @@ Options:
 
   * Federated Auth
   * HTMX
-  * Maybe Tailwind CDN has an option, though that's entirely a
+  * Maybe Tailwind CDN as an option, though that's entirely a
     template thing, and can co-existing with wasting memory and
     cycles running the cli
   * [in progress] A CRUD Blueprint, mostly to have a starting point for forms,
