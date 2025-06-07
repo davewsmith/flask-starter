@@ -1,6 +1,8 @@
 # flask-starter
 
-Starting point for Flask projects, docker compose edition
+An incomplete\* starting point for Flask projects, docker compose edition.
+
+\* See [Notes](NOTES.md)
 
 ## Usage
 
@@ -16,8 +18,9 @@ Runs `pytest` and `flake8` on host code (i.e., `.` is mounted as a volume).
     docker compose build
     docker compose up
 
-Launches a development server with live reload (i.e., `.` is mounted as a volume.) Edit away on local code,
-and flask in the container will (should?) rebuild as needed.
+Launches a development server with live reload (i.e., `.` is mounted as a volume) with
+TailwindCSS also watching `.` and rebuilding the stylesheet. Edit away on local code,
+and the app in the container will (should?) rebuild as needed.
 
 The app is available on http://localhost:5000/
 

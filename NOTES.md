@@ -82,3 +82,18 @@ Getting wtforms and tailwindcss to play well together might require
 some arm-wrestling.
 
 Needs pagination and delete, but that's good for this round.
+
+## Interlude
+
+"If this were Django, I'd be done by now."
+
+Questioning my choice of Flask for future projects. It's been a
+good run, but looking around in the ecosystem and poking around
+at issues and PRs in various Flask dependencies, I get the
+sense that Flask world is held together by a splintering group of
+developers. Finding the issue and PR I filed against Flask-Testing
+seven years ago sitting there isn't helping, even if that's
+now not the recommended way to test. Do I want to be spending
+time tending updates within the ecosystem?
+
+Parking this for now.
